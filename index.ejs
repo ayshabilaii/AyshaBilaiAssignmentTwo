@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <!-- CSS files -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/mdForDesktop.css" media="screen and (min-width: 1024px)" />
+  <link rel="stylesheet" href="./css/mdForSmall.css" media="screen and (max-width: 768px)" />
+  <link rel='stylesheet' href='/content/app.css' />
+  <link rel='stylesheet' href="/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel='stylesheet' href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+</head>
+
+<body id="home-page">
+
+<!-- Navbar starts here -->
+<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <% if (title == "Home") { %>
+            <a class="nav-link active" href="/home">
+          <% } else { %>
+            <a class="nav-link" href="/home">
+          <% } %>
+          <i class="fa-solid fa-lg fa-house-user"></i> Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/services">Services</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/products">Products</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact Us</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- Navbar ends here -->
+
+<main>
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Fluid jumbotron</h1>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+  </div>
+
+  <!-- Intro Section -->
+  <section class="intro-section">
+    <div class="text-content">
+      <h2>Hello, welcome to my portfolio!</h2>
+      <h1>My name is Aysha Bilai.</h1>
+      <p>
+        I am a passionate student in my second year of Networking and IT Security, at Ontario Tech University. 
+        I have a strong interest in learning new technologies and applying them in real-world scenarios. 
+        Feel free to explore my projects and get in touch!
+      </p>
+    </div>
+    <div class="image-content">
+      <img src="profilepic.jpg" alt="Profile picture of Aysha Bilai" class="profile-image" width="300" height="450">
+    </div>
+  </section>
+</main>
+
+<!-- Footer starts here -->
+<footer>
+  <p>Designed and built by Aysha Bilai</p>
+  <address>
+    <p>Contact developer at <a href="mailto:aysha.bilai@ontariotechu.net">aysha.bilai@ontariotechu.net</a></p>
+  </address>
+  <p>© 2024 Aysha Bilai's Portfolio</p>
+</footer>
+<!-- Footer ends here -->
+
+<!-- Script files -->
+<script src="/scripts/app.js"></script>
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/jquery/dist/jquery.min.js"></script>
+
+</body>
+</html>
